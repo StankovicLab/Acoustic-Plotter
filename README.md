@@ -21,7 +21,7 @@ Thresholds are semiautomatically determined
 DPOAE thresholds are determined when DP's are greater than 3x the standard deviation above the mean. ([Bartho et al. 2020](https://github.com/CDTbot/CDTbot))
 ABR thresholds are determined using a method of cross correlation described by [Suthakar & Liberman 2019](https://doi.org/10.1016/j.heares.2019.107782)
 
-# CONTENTS
+## CONTENTS
 
 - [Installer](https://github.com/StankovicLab/Acoustic-Plotter/tree/main/Installer)
 - [Documentation](https://github.com/StankovicLab/Acoustic-Plotter/blob/main/documentation.md)
