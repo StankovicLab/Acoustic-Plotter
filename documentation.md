@@ -87,7 +87,7 @@ When saving images, the user has the option to save as PNG, JPEG, PDF, Matlab Fi
 
 ## Combine Files GUI
 
-If the user has multiple files they would like to edit, combine, delete bad trials, or combine trials, use the Combine Files GUI. This GUI will only accept matlab files so before using it, user must convert ARF files to MAT files in main GUI. Once data is loaded, user will see data displayed in a data-tree like format which is organized by File -> Mouse -> Frequency -> Levels (Levels is only to provide the user with level information, nothing can be modified at this level). 
+If the user has multiple files they would like to edit, combine, delete bad trials, or combine trials, use the Combine Files GUI. This GUI will only accept matlab files so before using it, user must convert ARF files to MAT files in main GUI or by using the script `convertARFtoMAT.m`. Once data is loaded, user will see data displayed in a data-tree like format which is organized by File -> Mouse -> Frequency -> Levels (Levels is only to provide the user with level information, nothing can be modified at this level). 
 
 <p align="center">
   <img src="Assets/doc10.png" alt="hi" class="inline"/>
