@@ -20,25 +20,6 @@ date: "2 December 2022"
 bibliography: paper.bib
 ---
 
-
-# `AcousticPlotter`
-A stand-alone Matlab application for viewing, comparing, and selecting thresholds of ABR and DPOAE data.
-
-Tags:
-  - Auditory Brainstem Response (ABR)
-  - Distortion Product Otoacoustic Emissions (DPOAEs)
-  - Tucker and Davis (TDT)
-  - Matlab
-  
-Authors:
-  - Stephen McInturff, Ph.D.
-  - Konstantina Stankovic, M.D., Ph.D.
-  
-Affiliations:
- - Stanford Universy Department of Otolaryngology
- 
----
-
 ## Summary
 
 The `AcousticPlotter` application provides researchers with a simplified interface for viewing, comparing, grouping, and selecting thresholds of auditory electrophysiological data: auditory brainstem responses (ABRs) and distortion product otoacoustic emissions (DPOAEs). Created using Matlab’s application compiler, `AcousticPlotter` is designed for researchers using TDT’s BioSigRZ software. Audiometric thresholds are semi-automatic determined is based upon the algorithms of Suthakar & Liberman ([2019](https://doi.org/10.1016/j.heares.2019.107782)) for ABRs and Bartho et al. ([2020](https://github.com/CDTbot/CDTbot)) for DPOAEs. Thresholds can also be manually set. Waveform data, groupings information, and thresholds are all able to be exported into Excel or Matlab files. Publication ready figures are also able to be saved in a variety of picture formats. Finally, `AcousticPlotter` has an extra feature to edit and combine datasets in aid researchers when experiments didn't go as planned and multiple tests need to be combined or excluded. 
