@@ -6,11 +6,6 @@
 	<img src="Assets/MouseICON.jpg" width="256" height="256" alt="hi" class="inline"/>
 </p>
 
-### AUTHOR:
-
-Created by Stephen McInturff 2022 as part of the Stankovic Lab at Stanford University
-email: stephen_mcinturff@stanford.edu
-
 ## SUMMARY:
 Application for veiwing and finding thresholds of ABRs and DPOAEs created by the TDT software [BioSigRZ](https://www.tdt.com/component/biosigrz-abr-dpoae-software/)
 
@@ -30,3 +25,22 @@ ABR thresholds are determined using a method of cross correlation described by [
 - [Examples](https://github.com/StankovicLab/Acoustic-Plotter/tree/main/Examples)
 - [HotKeys](https://github.com/StankovicLab/Acoustic-Plotter/blob/main/hotkeys.md)
 - [convertARFtoMAT](https://github.com/StankovicLab/Acoustic-Plotter/tree/main/convertARFtoMAT)
+
+## Citing CDTbot
+
+If you used this program in your research, please cite it! 
+
+All versions of `AcousticPlotter` can be **cited using its DOI** as seen below.  
+
+> McInturff & Stankovic (2022). AcousticPlotter: A stand-alone Matlab application for viewing, comparing, and selecting thresholds of ABR and DPOAE data.
+
+## AUTHORS
+
+    Stephen McInturff Ph.D - Lead Developer
+    Konstantina Stankovic M.D. Ph.D.
+
+[Lab Website](https://med.stanford.edu/stankovic-lab.html)
+
+## FUNDING
+
+    We gratefully acknowledge support from the Project Geneva/ Uniformed Services University of the Health Sciences grant HU00011920056, the Remondi Foundation, WayVector, and Bertarelli Foundation endowed professorship (KMS).
