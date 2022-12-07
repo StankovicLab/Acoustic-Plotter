@@ -1,6 +1,6 @@
 # AcousticPlotter
 #### A stand-alone Matlab application for viewing, comparing, and selecting thresholds of ABR and DPOAE data.
-[![Language](https://img.shields.io/badge/Language-MATLAB-important)](https://www.mathworks.com/products/matlab.html)  [![MIT License](https://img.shields.io/github/license/Murray-Bartho/DPOAE-Analyzer)](https://github.com/StankovicLab/Acoustic-Plotter/blob/main/LICENSE)
+[![Language](https://img.shields.io/badge/Language-MATLAB-important)](https://www.mathworks.com/products/matlab.html)  [![MIT License](https://img.shields.io/github/license/Murray-Bartho/DPOAE-Analyzer)](https://github.com/StankovicLab/Acoustic-Plotter/blob/main/LICENSE) [![DOI](https://zenodo.org/badge/545105188.svg)](https://zenodo.org/badge/latestdoi/545105188)
 
 <p align="center">
 	<img src="Assets/MouseICON.jpg" width="256" height="256" alt="hi" class="inline"/>
@@ -32,7 +32,7 @@ If you used this program in your research, please cite it!
 
 All versions of `AcousticPlotter` can be **cited using its DOI** as seen below.  
 
-> McInturff & Stankovic (2022). AcousticPlotter: A stand-alone Matlab application for viewing, comparing, and selecting thresholds of ABR and DPOAE data.
+> McInturff & Stankovic (2022). AcousticPlotter: A stand-alone Matlab application for viewing, comparing, and selecting thresholds of ABR and DPOAE data. DOI 10.5281/zendodo.7412173
 
 ## AUTHORS
 
