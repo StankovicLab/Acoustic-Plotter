@@ -2,21 +2,21 @@
 ---
 title: 'AcousticPlotter: A stand-alone Matlab application for viewing, comparing, and selecting thresholds of ABR and DPOAE data'
 tags:
-- Auditory Brainstem Response (ABR)
-- Distortion Product Otoacoustic Emissions (DPOAEs)
-- Tucker and Davis (TDT)
-- Matlab
+  - Auditory Brainstem Response (ABR)
+  - Distortion Product Otoacoustic Emissions (DPOAEs)
+  - Tucker and Davis (TDT)
+  - Matlab
 authors:
-- name: Stephen McInturff, Ph.D.
-  orcid: 0000-0002-3356-4692
-  corresponding: true
-  affiliation: 1  
-- Konstantina M. Stankovic, M.D., Ph.D. 
-  orcid: 0000-0003-0233-279X
-  affiliation: 1
+  - name: Stephen McInturff, Ph.D.
+    orcid: 0000-0002-3356-4692
+    corresponding: true
+    affiliation: 1  
+  - Konstantina M. Stankovic, M.D., Ph.D. 
+    orcid: 0000-0003-0233-279X
+    affiliation: 1
 affiliations:
-- name: Stanford Universy Department of Otolaryngology
-  index: 1
+  - name: Stanford Universy Department of Otolaryngology
+    index: 1
 date: 2 December 2022
 bibliography: paper.bib
 ---
