@@ -6,16 +6,12 @@ tags:
   - Matlab
   - Tucker and Davis (TDT)
 authors:
-  - name: Adrian M. Price-Whelan
-    orcid: 0000-0000-0000-0000
-    equal-contrib: true
-    affiliation: "1, 2" # (Multiple affiliations must be quoted)
+  - name: Stephen McInturff Ph.D
+    orcid: 0000-0002-3356-4692
+    affiliation: 1
   - name: Author Without ORCID
     equal-contrib: true # (This is how you can denote equal contributions between multiple authors)
     affiliation: 2
-  - name: Author with no affiliation
-    corresponding: true # (This is how to denote the corresponding author)
-    affiliation: 3
 affiliations:
  - name: Department of Otolaryngology, Stanford University, USA
    index: 1
