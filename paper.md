@@ -6,11 +6,11 @@ tags:
   - Matlab
   - Tucker and Davis (TDT)
 authors:
-  - name: Stephen McInturff Ph.D.
+  - name: Stephen McInturff
     orcid: 0000-0002-3356-4692
     corresponding: true
     affiliation: 1
-  - name: Konstantina M. Stankovic M.D. Ph.D. 
+  - name: Konstantina M. Stankovic
     orcid: 0000-0003-0233-279X
     affiliation: 1
 affiliations:
