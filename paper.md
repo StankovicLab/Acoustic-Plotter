@@ -15,8 +15,12 @@ authors:
     orcid: 0000-0003-0233-279X
     affiliation: 1
 affiliations:
- - name: Stanford Universy Department of Otolaryngology
+ - name: Lyman Spitzer, Jr. Fellow, Princeton University, USA
    index: 1
+ - name: Institution Name, Country
+   index: 2
+ - name: Independent Researcher, Country
+   index: 3
 date: 13 August 2017
 bibliography: paper.bib
 
