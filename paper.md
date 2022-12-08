@@ -1,11 +1,10 @@
 ---
-title: 'Gala: A Python package for galactic dynamics'
+title: 'AcousticPlotter: A stand-alone Matlab application for viewing, comparing, and selecting thresholds of ABR and DPOAE data'
 tags:
-  - Python
-  - astronomy
-  - dynamics
-  - galactic dynamics
-  - milky way
+  - Auditory Brainstem Response (ABR)
+  - Distortion Product Otoacoustic Emissions (DPOAEs)
+  - Matlab
+  - Tucker and Davis (TDT)
 authors:
   - name: Adrian M. Price-Whelan
     orcid: 0000-0000-0000-0000
