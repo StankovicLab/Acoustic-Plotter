@@ -7,20 +7,19 @@ tags:
   - galactic dynamics
   - milky way
 authors:
-  - name: Stephen McInturff, Ph.D.
-    orcid: 0000-0002-3356-4692
-    corresponding: true
-    affiliation: 1  
-  - Konstantina M. Stankovic, M.D., Ph.D. 
-    orcid: 0000-0003-0233-279X
-    affiliation: 1
+  - name: Adrian M. Price-Whelan
+    orcid: 0000-0000-0000-0000
+    equal-contrib: true
+    affiliation: "1, 2" # (Multiple affiliations must be quoted)
+  - name: Author Without ORCID
+    equal-contrib: true # (This is how you can denote equal contributions between multiple authors)
+    affiliation: 2
+  - name: Author with no affiliation
+    corresponding: true # (This is how to denote the corresponding author)
+    affiliation: 3
 affiliations:
- - name: Lyman Spitzer, Jr. Fellow, Princeton University, USA
+ - name: Department of Otolaryngology, Stanford University, USA
    index: 1
- - name: Institution Name, Country
-   index: 2
- - name: Independent Researcher, Country
-   index: 3
 date: 13 August 2017
 bibliography: paper.bib
 
