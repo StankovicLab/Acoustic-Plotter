@@ -6,12 +6,12 @@ tags:
   - Matlab
   - Tucker and Davis (TDT)
 authors:
-  - name: Stephen McInturff Ph.D
+  - name: Stephen McInturff Ph.D.
     orcid: 0000-0002-3356-4692
     affiliation: 1
-  - name: Author Without ORCID
-    equal-contrib: true # (This is how you can denote equal contributions between multiple authors)
-    affiliation: 2
+  - name: Konstantina M. Stankovic M.D. Ph.D. 
+    orcid: 0000-0003-0233-279X
+    affiliation: 1
 affiliations:
  - name: Department of Otolaryngology, Stanford University, USA
    index: 1
@@ -33,7 +33,7 @@ authors:
     orcid: 0000-0002-3356-4692
     corresponding: true
     affiliation: 1  
-  - Konstantina M. Stankovic, M.D., Ph.D. 
+  - name: Konstantina M. Stankovic, M.D., Ph.D. 
     orcid: 0000-0003-0233-279X
     affiliation: 1
 affiliations:
