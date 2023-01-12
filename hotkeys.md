@@ -11,7 +11,7 @@
   
   (if hotkeys not working, click on the main figure and try again. Only works if main figure is selected)
   
-  #### Peakfinder
+  ### Peakfinder
   
 - ‘p’ -> activate peakfinder and estimate P1-5 
 - right/left arrows -> move a toggled peak left or right along the waveform. Movement of the peak will ‘snap’ to the next estimated peak in the waveform or by hold down ‘shift’ + right/left arrow will finely move the peak along the waveform
