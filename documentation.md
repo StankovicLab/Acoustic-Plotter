@@ -35,6 +35,14 @@ The user may also want to add a filter to data. Three 5th order Butterworth filt
   <img src="Assets/doc4.png" alt="hi" class="inline"/>
 </p>
 
+### UPDATE - 1/12/2023
+
+Acousticplotter now offers a built in peak finder. By pressing ‘p’ the ABR peaks will be displayed on plot. This feature is largely based on [ABR Peak Analaysis Software](https://www.masseyeandear.org/research/otolaryngology/eaton-peabody-laboratories/engineering-core) written by Ken Hancock of the Eaton Peabody Laboratories. Most of the functionality is similar to that software  in terms of finding and editing peaks and nodes. A new save feature become available to export peak and nodes to an excel sheet. Both peaks and nodes have to determined for save function to work.
+
+<p align="center">
+  <img src="Assets/doc13%20-%20update%201.png" alt="hi" class="inline"/>
+</p>
+
 ## DPOAEs
 
 In the main window, the user sees the raw DPOAE spectrums. Like the ABR window, the lists on the left-hand side allows the user to select which mouse and which frequency to view. Details about the selected mouse are displayed on the bottom-left. Two additional plots are also displayed in the DPOAE window. The top-right plot displays a zoomed in image of the spectra, at threshold, centered around the DP. The bottom-right plot displays the amplitudes of F1, F2, DP, and noise floor as a function of stimulus level. 
