@@ -44,3 +44,7 @@ All versions of `AcousticPlotter` can be **cited using its DOI** as seen below.
 ## FUNDING
 
     We gratefully acknowledge support from the Project Geneva/ Uniformed Services University of the Health Sciences grant HU00011920056, the Remondi Foundation, WayVector, and Bertarelli Foundation endowed professorship (KMS).
+    
+## UPDATE
+
+    1/12/2023 - added ability to find ABR peaks.
