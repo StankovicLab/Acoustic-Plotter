@@ -65,7 +65,9 @@ Only tested on PC
 
 Test with older ARF files and makesure `AcosuticPlotter` is backwards compatible
 
-Add ability to find amplitude and latencies of ABR peaks
+## Updates
+
+1/12/2023 - Added ability to find amplitude and latencies of ABR peaks
 
 ## Funding
 
