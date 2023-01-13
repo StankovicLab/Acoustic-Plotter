@@ -1,0 +1,176 @@
+<deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
+  <configuration build-checksum="3811123266" file="C:\Users\stevemci\Box\Stephen McInturff's Files\AcousticPlotter_forGithub - Copy\appsave\AcousticPlotter.prj" location="C:\Users\stevemci\Box\Stephen McInturff's Files\AcousticPlotter_forGithub - Copy\appsave" name="AcousticPlotter" preferred-package-location="C:\Users\stevemci\Box\Stephen McInturff's Files\AcousticPlotter_forGithub - Copy\appsave\AcousticPlotter\for_redistribution" preferred-package-type="package.type.exe" target="target.ezdeploy.standalone" target-name="Application Compiler">
+    <param.appname>AcousticPlotter</param.appname>
+    <param.icon>${PROJECT_ROOT}\AcousticPlotter_resources\icon.ico</param.icon>
+    <param.icons>
+      <file>${PROJECT_ROOT}\AcousticPlotter_resources\icon_48.png</file>
+      <file>${PROJECT_ROOT}\AcousticPlotter_resources\icon_32.png</file>
+      <file>${PROJECT_ROOT}\AcousticPlotter_resources\icon_24.png</file>
+      <file>${PROJECT_ROOT}\AcousticPlotter_resources\icon_16.png</file>
+    </param.icons>
+    <param.version>2.0</param.version>
+    <param.authnamewatermark>Stephen McInturff</param.authnamewatermark>
+    <param.email>stephen_mcinturff@stanford.edu</param.email>
+    <param.company>StanfordOto</param.company>
+    <param.summary>Application for veiwing and finding thresholds of ABRs and DPOAEs created by the TDT software BioSigRZ</param.summary>
+    <param.description>DPOAE thresholds are determined when DP's are greater than 3x the standard deviation above the mean. (Bartho et al. 2020)
+ABR thresholds are determined using a method of cross correlation described by Suthakar &amp; Liberman 2019
+
+update 1/12/2023 - added ABR peakfinder</param.description>
+    <param.screenshot>C:\Users\stevemci\Box\Stephen McInturff's Files\AcousticPlotter_forGithub - Copy\MouseICON.jpg</param.screenshot>
+    <param.guid />
+    <param.installpath.string>\StanfordOto\AcousticPlotter\</param.installpath.string>
+    <param.installpath.combo>option.installpath.programfiles</param.installpath.combo>
+    <param.logo />
+    <param.install.notes />
+    <param.target.install.notes />
+    <param.intermediate>${PROJECT_ROOT}\AcousticPlotter\for_testing</param.intermediate>
+    <param.files.only>${PROJECT_ROOT}\AcousticPlotter\for_redistribution_files_only</param.files.only>
+    <param.output>${PROJECT_ROOT}\AcousticPlotter\for_redistribution</param.output>
+    <param.logdir>${PROJECT_ROOT}\AcousticPlotter</param.logdir>
+    <param.enable.clean.build>false</param.enable.clean.build>
+    <param.user.defined.mcr.options />
+    <param.target.type>subtarget.standalone</param.target.type>
+    <param.support.packages />
+    <param.web.mcr>true</param.web.mcr>
+    <param.package.mcr>false</param.package.mcr>
+    <param.no.mcr>false</param.no.mcr>
+    <param.web.mcr.name>MyAppInstaller_web</param.web.mcr.name>
+    <param.package.mcr.name>MyAppInstaller_mcr</param.package.mcr.name>
+    <param.no.mcr.name>MyAppInstaller_app</param.no.mcr.name>
+    <param.windows.command.prompt>true</param.windows.command.prompt>
+    <param.create.log>false</param.create.log>
+    <param.log.file />
+    <param.native.matlab>false</param.native.matlab>
+    <param.checkbox>false</param.checkbox>
+    <param.example />
+    <param.help.text>Syntax 
+	  -? 
+	 
+ Input Arguments 
+	 -?  print help on how to use the application 
+	 input arguments 
+ Description 
+ 	 DPOAE thresholds are determined when DP's are greater than 3x the standard deviation above the mean. (Bartho et al. 2020)
+ABR thresholds are determined using a method of cross correlation described by Suthakar &amp; Liberman 2019
+
+update 1/12/2023 - added ABR peakfinder</param.help.text>
+    <unset>
+      <param.guid />
+      <param.installpath.string />
+      <param.installpath.combo />
+      <param.logo />
+      <param.install.notes />
+      <param.target.install.notes />
+      <param.intermediate />
+      <param.files.only />
+      <param.output />
+      <param.logdir />
+      <param.enable.clean.build />
+      <param.user.defined.mcr.options />
+      <param.target.type />
+      <param.support.packages />
+      <param.web.mcr />
+      <param.package.mcr />
+      <param.no.mcr />
+      <param.web.mcr.name />
+      <param.package.mcr.name />
+      <param.no.mcr.name />
+      <param.windows.command.prompt />
+      <param.create.log />
+      <param.log.file />
+      <param.native.matlab />
+      <param.checkbox />
+      <param.example />
+    </unset>
+    <fileset.main>
+      <file>C:\Users\stevemci\Box\Stephen McInturff's Files\AcousticPlotter_forGithub - Copy\Files\AcousticPlotter.m</file>
+    </fileset.main>
+    <fileset.resources>
+      <file>C:\Users\stevemci\Box\Stephen McInturff's Files\AcousticPlotter_forGithub - Copy\readme2.txt</file>
+    </fileset.resources>
+    <fileset.package />
+    <fileset.depfun>
+      <file>C:\Users\stevemci\Box\Stephen McInturff's Files\AcousticPlotter_forGithub - Copy\Files\AcousticPlotterStartGUI.mlapp</file>
+      <file>C:\Users\stevemci\Box\Stephen McInturff's Files\AcousticPlotter_forGithub - Copy\Files\arfread_SM.m</file>
+      <file>C:\Users\stevemci\Box\Stephen McInturff's Files\AcousticPlotter_forGithub - Copy\Files\Butterworthfilter.m</file>
+      <file>C:\Users\stevemci\Box\Stephen McInturff's Files\AcousticPlotter_forGithub - Copy\Files\collectdetailsARF.m</file>
+      <file>C:\Users\stevemci\Box\Stephen McInturff's Files\AcousticPlotter_forGithub - Copy\Files\CombineFiles.mlapp</file>
+      <file>C:\Users\stevemci\Box\Stephen McInturff's Files\AcousticPlotter_forGithub - Copy\Files\estimate_abr_threshold_SM.m</file>
+      <file>C:\Users\stevemci\Box\Stephen McInturff's Files\AcousticPlotter_forGithub - Copy\Files\fit_sigmoid_SM.m</file>
+      <file>C:\Users\stevemci\Box\Stephen McInturff's Files\AcousticPlotter_forGithub - Copy\Files\MakeGroups.mlapp</file>
+      <file>C:\Users\stevemci\Box\Stephen McInturff's Files\AcousticPlotter_forGithub - Copy\Files\normalizeScale.m</file>
+      <file>C:\Users\stevemci\Box\Stephen McInturff's Files\AcousticPlotter_forGithub - Copy\Files\plotABRs.mlapp</file>
+      <file>C:\Users\stevemci\Box\Stephen McInturff's Files\AcousticPlotter_forGithub - Copy\Files\plotDPOAEs.mlapp</file>
+      <file>C:\Users\stevemci\Box\Stephen McInturff's Files\AcousticPlotter_forGithub - Copy\Files\rewriteTxt.m</file>
+      <file>C:\Users\stevemci\Box\Stephen McInturff's Files\AcousticPlotter_forGithub - Copy\Files\saveExcel.m</file>
+      <file>C:\Users\stevemci\Box\Stephen McInturff's Files\AcousticPlotter_forGithub - Copy\Files\saveExcel_peaks.m</file>
+      <file>C:\Users\stevemci\Box\Stephen McInturff's Files\AcousticPlotter_forGithub - Copy\Files\saveExcel_Thresholds.m</file>
+      <file>C:\Users\stevemci\Box\Stephen McInturff's Files\AcousticPlotter_forGithub - Copy\Files\saveImage.m</file>
+      <file>C:\Users\stevemci\Box\Stephen McInturff's Files\AcousticPlotter_forGithub - Copy\Files\saveSelect.mlapp</file>
+      <file>C:\Users\stevemci\Box\Stephen McInturff's Files\AcousticPlotter_forGithub - Copy\Files\ThresholdSummary.mlapp</file>
+    </fileset.depfun>
+    <build-deliverables>
+      <file location="${PROJECT_ROOT}\AcousticPlotter\for_testing" name="AcousticPlotter.exe" optional="false">C:\Users\stevemci\Box\Stephen McInturff's Files\AcousticPlotter_forGithub - Copy\appsave\AcousticPlotter\for_testing\AcousticPlotter.exe</file>
+      <file location="${PROJECT_ROOT}\AcousticPlotter\for_testing" name="splash.png" optional="false">C:\Users\stevemci\Box\Stephen McInturff's Files\AcousticPlotter_forGithub - Copy\appsave\AcousticPlotter\for_testing\splash.png</file>
+      <file location="${PROJECT_ROOT}\AcousticPlotter\for_testing" name="readme.txt" optional="true">C:\Users\stevemci\Box\Stephen McInturff's Files\AcousticPlotter_forGithub - Copy\appsave\AcousticPlotter\for_testing\readme.txt</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>C:\Program Files\MATLAB\R2022b</root>
+      <toolboxes>
+        <toolbox name="matlabcoder" />
+        <toolbox name="embeddedcoder" />
+        <toolbox name="gpucoder" />
+        <toolbox name="fixedpoint" />
+        <toolbox name="matlabhdlcoder" />
+        <toolbox name="neuralnetwork" />
+      </toolboxes>
+      <toolbox>
+        <matlabcoder>
+          <enabled>true</enabled>
+        </matlabcoder>
+      </toolbox>
+      <toolbox>
+        <embeddedcoder>
+          <enabled>true</enabled>
+        </embeddedcoder>
+      </toolbox>
+      <toolbox>
+        <gpucoder>
+          <enabled>true</enabled>
+        </gpucoder>
+      </toolbox>
+      <toolbox>
+        <fixedpoint>
+          <enabled>true</enabled>
+        </fixedpoint>
+      </toolbox>
+      <toolbox>
+        <matlabhdlcoder>
+          <enabled>true</enabled>
+        </matlabhdlcoder>
+      </toolbox>
+      <toolbox>
+        <neuralnetwork>
+          <enabled>true</enabled>
+        </neuralnetwork>
+      </toolbox>
+    </matlab>
+    <platform>
+      <unix>false</unix>
+      <mac>false</mac>
+      <windows>true</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>10.0</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>win64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>
