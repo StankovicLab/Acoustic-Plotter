@@ -119,5 +119,9 @@ Press the ‘Save’ button when edits complete. Will save as a new MAT file tha
 
 ---
 
+It is highly recommended that you save all work as MAT files as MAT files allow you to save your work, ie. thresholds and peaks. When you open a MAT file, all saved work is also imported.
+
+---
+
 For reporting bugs or any other inquiries, please contact Stephen McInturff at stephen_mcinturff@stanford.edu 
 
