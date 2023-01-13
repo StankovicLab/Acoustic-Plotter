@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
-  <configuration build-checksum="3811123266" file="C:\Users\stevemci\Box\Stephen McInturff's Files\AcousticPlotter_forGithub - Copy\appsave\AcousticPlotter.prj" location="C:\Users\stevemci\Box\Stephen McInturff's Files\AcousticPlotter_forGithub - Copy\appsave" name="AcousticPlotter" preferred-package-location="C:\Users\stevemci\Box\Stephen McInturff's Files\AcousticPlotter_forGithub - Copy\appsave\AcousticPlotter\for_redistribution" preferred-package-type="package.type.exe" target="target.ezdeploy.standalone" target-name="Application Compiler">
+  <configuration build-checksum="2119196859" file="C:\Users\stevemci\Box\Stephen McInturff's Files\AcousticPlotter_forGithub - Copy\Installer_New\AcousticPlotter.prj" location="C:\Users\stevemci\Box\Stephen McInturff's Files\AcousticPlotter_forGithub - Copy\Installer_New" name="AcousticPlotter" preferred-package-location="C:\Users\stevemci\Box\Stephen McInturff's Files\AcousticPlotter_forGithub - Copy\Installer_New\AcousticPlotter\for_redistribution" preferred-package-type="package.type.exe" target="target.ezdeploy.standalone" target-name="Application Compiler">
     <param.appname>AcousticPlotter</param.appname>
     <param.icon>${PROJECT_ROOT}\AcousticPlotter_resources\icon.ico</param.icon>
     <param.icons>
@@ -49,12 +49,7 @@ update 1/12/2023 - added ABR peakfinder</param.description>
 	 
  Input Arguments 
 	 -?  print help on how to use the application 
-	 input arguments 
- Description 
- 	 DPOAE thresholds are determined when DP's are greater than 3x the standard deviation above the mean. (Bartho et al. 2020)
-ABR thresholds are determined using a method of cross correlation described by Suthakar &amp; Liberman 2019
-
-update 1/12/2023 - added ABR peakfinder</param.help.text>
+	 input arguments</param.help.text>
     <unset>
       <param.guid />
       <param.installpath.string />
@@ -111,9 +106,9 @@ update 1/12/2023 - added ABR peakfinder</param.help.text>
       <file>C:\Users\stevemci\Box\Stephen McInturff's Files\AcousticPlotter_forGithub - Copy\Files\ThresholdSummary.mlapp</file>
     </fileset.depfun>
     <build-deliverables>
-      <file location="${PROJECT_ROOT}\AcousticPlotter\for_testing" name="AcousticPlotter.exe" optional="false">C:\Users\stevemci\Box\Stephen McInturff's Files\AcousticPlotter_forGithub - Copy\appsave\AcousticPlotter\for_testing\AcousticPlotter.exe</file>
-      <file location="${PROJECT_ROOT}\AcousticPlotter\for_testing" name="splash.png" optional="false">C:\Users\stevemci\Box\Stephen McInturff's Files\AcousticPlotter_forGithub - Copy\appsave\AcousticPlotter\for_testing\splash.png</file>
-      <file location="${PROJECT_ROOT}\AcousticPlotter\for_testing" name="readme.txt" optional="true">C:\Users\stevemci\Box\Stephen McInturff's Files\AcousticPlotter_forGithub - Copy\appsave\AcousticPlotter\for_testing\readme.txt</file>
+      <file location="${PROJECT_ROOT}\AcousticPlotter\for_testing" name="AcousticPlotter.exe" optional="false">C:\Users\stevemci\Box\Stephen McInturff's Files\AcousticPlotter_forGithub - Copy\Installer_New\AcousticPlotter\for_testing\AcousticPlotter.exe</file>
+      <file location="${PROJECT_ROOT}\AcousticPlotter\for_testing" name="splash.png" optional="false">C:\Users\stevemci\Box\Stephen McInturff's Files\AcousticPlotter_forGithub - Copy\Installer_New\AcousticPlotter\for_testing\splash.png</file>
+      <file location="${PROJECT_ROOT}\AcousticPlotter\for_testing" name="readme.txt" optional="true">C:\Users\stevemci\Box\Stephen McInturff's Files\AcousticPlotter_forGithub - Copy\Installer_New\AcousticPlotter\for_testing\readme.txt</file>
     </build-deliverables>
     <workflow />
     <matlab>
