@@ -47,4 +47,4 @@ All versions of `AcousticPlotter` can be **cited using its DOI** as seen below.
     
 ## UPDATE
 
-v2.0 1/12/2023 - added ability to find ABR peaks.
+v2.0 - 1/12/2023 - added ability to find ABR peaks.
