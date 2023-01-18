@@ -16,17 +16,10 @@ warning off
 addpath('FunctionsFolder')
 addpath('automaticThreshold')
 
-% open dialog box to ask if user wants to load ARF or MAT file types
-ftype = questdlg('What file type would you like to open?', ...
-    'file type', 'ARF', 'MAT', 'ARF');
-
-%%
-clc
-
 % defite what app to use
 app = AcousticPlotterStartGUI;
 % call app
-startfuncmaster(app, ftype);
+startfuncmaster(app);
 % wait until app has been closed to continue
 waitfor(app)
 
