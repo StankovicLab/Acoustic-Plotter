@@ -26,7 +26,7 @@ ABR thresholds are determined using a method of cross correlation described by [
 - [HotKeys](https://github.com/StankovicLab/Acoustic-Plotter/blob/main/hotkeys.md)
 - [convertARFtoMAT](https://github.com/StankovicLab/Acoustic-Plotter/tree/main/convertARFtoMAT)
 
-## Citing CDTbot
+## Citing AcosuticPlotter
 
 If you used this program in your research, please cite it! 
 
