@@ -1,13 +1,13 @@
 # Documentation
 
 ## Selecting Mice
-The `AcousticPlotter` load screen enable the user to select which mice they would like to view and analyize. Before opening, the program will ask if the user wants to load an ARF file or a MAT file. If user choses ARF, they will only be able to open 1 ARF file. If user chooses MAT, they may open multiple mat files. To get a MAT file, the user must open designed ARF files first and then save as matlab file (see below).
+The `AcousticPlotter` load screen enable the user to select which mice he/she would like to view and analyize. The user can load either ARF MAT files. If user choses ARF, he/she will only be able to open 1 ARF file. If user chooses MAT, he/she may open multiple mat files. 
 
 <p align="center">
-  <img src="Assets/doc1.png" alt="hi" class="inline"/>
+  <img src="Assets/doc1%20-%20update%202.png" alt="hi" class="inline"/>
 </p>
  
-After loading the desired ARF/MAT file, the window will display information about all the mice contained in that file. The information displayed will include type of file (auditory brainstem respond [ABR] / distortion product otoacoustic emissions [DPOAE]), date collected, ID, reference1, reference2, and number of recordings in that experiment.  
+After loading the desired ARF/MAT file(s), the window will display information about all the mice contained in that file. The information displayed will include type of file (ABR/DPOAE), date collected, ID, reference1, reference2, and number of recordings in that experiment.  
 
 To select mice, hold down the ctrl key to select multiple experiments. Either ABR or DPOAE experiments can be selected <span style="color: red"> but not both </span>. When selection has been made, press the “Select” button.
 
