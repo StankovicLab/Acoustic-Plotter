@@ -50,6 +50,6 @@ All versions of `AcousticPlotter` can be **cited using its DOI** as seen below.
 v2.0 - 1/12/2023 
 - added ability to find ABR peaks.
 
-V3.0 - 2/28/2023 
+V2.1 - 2/28/2023 
 - fixed a number of bugs
 - got rid of opening dialog box "What file type would you like to open? ARF MAT". Now takes care of determining file type automatically
