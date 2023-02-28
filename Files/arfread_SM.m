@@ -118,7 +118,7 @@ for x = 1:data.RecHead.ngrps
     %disp(data.groups(x).ID)
     %disp(data.groups(x).ref1)
     %disp(data.groups(x).ref2)
-    
+
     data.groups(x).recs = [];%cell(1, data.groups(x).nrecs);
     for i=1:data.groups(x).nrecs
         data.groups(x).recs(i).recn=fread(fid,1,'int16');
@@ -171,9 +171,15 @@ for x = 1:data.RecHead.ngrps
         % index current location
         idx = ftell(fid);
 
-        % extract curser frequency information and read into struct
+        % extract curser frequency information and read into struct,
         for j = 1:9*10
-            test(j) =  fread(fid,1,'float');
+            % catch to make sure there was a curser
+            go = fread(fid,1,'float');
+            if isempty(go)
+                test(j) =  nan;
+            else
+                test(j) =  go;
+            end
         end
 
         data.groups(x).recs(i).Cur1F=test(1);
@@ -192,9 +198,14 @@ for x = 1:data.RecHead.ngrps
         % skip all 10 cursors placeholders
         fseek(fid,36*10,'cof');
 
-        data.groups(x).recs(i).data=fread(fid,data.groups(x).recs(i).npts,'float');
+        % catch to make sure there is data
+        try
+            data.groups(x).recs(i).data=fread(fid,data.groups(x).recs(i).npts,'float');
+        catch
+            disp(['Group ', num2str(x), ' Recording ', num2str(i), ' not found'])
+        end
     end
-    
+
     if PLOT
         figure;
         

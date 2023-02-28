@@ -1,4 +1,4 @@
-function saveExcel(fn, list, details, thresh, fbounds)
+function saveExcel(path, fn, list, details, thresh, fbounds)
 % function for saving data as an excel. 
 %
 % explorted data will include waveform data, details about the animal, and
@@ -36,7 +36,7 @@ filt = app.filt;
 close(app.UIFigure)
 
 % select folder and file name to save to
-[file,path] = uiputfile([fn, '.xlsx']);
+[file,path] = uiputfile(fullfile(path, [fn, '.xlsx']));
 
 % open waitbar window
 w = waitbar(0,'Please Wait, Saving Excel');
@@ -141,12 +141,13 @@ if ~isempty(selected)
         end
 
         % make sheet name and remove any special characters
-        sheet = [num2str(i),'_',details(i).ID, '__', details(i).ref1, '__', details(1).ref2];
+        sheet = [num2str(i),'_',details(i).ID, '__', details(i).ref1, '__', details(i).ref2];
         sheet = strrep(sheet, ' ', '');
         sheet(ismember(sheet, specialChar)) = '_';
 
         % write to excel
         writecell(dat, saveName, 'Sheet', sheet)
+
     end
 
     % close waitbar window

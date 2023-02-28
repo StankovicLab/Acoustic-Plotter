@@ -1,4 +1,4 @@
-function saveExcel_peaks(fn, list, details, threshold)
+function saveExcel_peaks(path, fn, list, details, threshold)
 % function for saving peak data as an excel. 
 %
 % explorted data will include peaks and nodes as well as thresholds
@@ -34,12 +34,11 @@ selected = app.selected;
 filt = app.filt;
 close(app.UIFigure)
 
-
-
 % catch, make sure atleast some files are selected
 if ~isempty(selected)
     % select folder and file name to save to
-    [file,path] = uiputfile([fn, '_peaks.xlsx']);
+%     [file,path] = uiputfile([fn, '_peaks.xlsx']);
+    [file,path] = uiputfile(fullfile(path, [fn, '_peaks.xlsx']));
 
     % open waitbar window
     w = waitbar(0,'Please Wait, Saving Excel');
@@ -166,12 +165,13 @@ if ~isempty(selected)
         end
 
         % make sheet name and remove any special characters
-        sheet = [num2str(i),'_',details(i).ID, '__', details(i).ref1, '__', details(1).ref2];
+        sheet = [num2str(i),'_',details(i).ID, '__', details(i).ref1, '__', details(i).ref2];
         sheet = strrep(sheet, ' ', '');
         sheet(ismember(sheet, specialChar)) = '_';
 
         % write to excel
         writecell(dat, saveName, 'Sheet', sheet)
+
     end
 
     % close waitbar window
