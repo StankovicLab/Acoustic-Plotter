@@ -53,3 +53,8 @@ v2.0 - 1/12/2023
 V2.1 - 2/28/2023 
 - fixed a number of bugs
 - got rid of opening dialog box "What file type would you like to open? ARF MAT". Now takes care of determining file type automatically
+
+V2.2 - 3/31/2023 
+- fixed a number of bugs 
+- added scaling functionality
+- added ability to return to starting page
