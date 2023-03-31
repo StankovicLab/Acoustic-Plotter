@@ -43,6 +43,16 @@ Acousticplotter now offers a built in peak finder. By pressing ‘p’ the ABR p
   <img src="Assets/doc13%20-%20update%201.png" alt="hi" class="inline"/>
 </p>
 
+### UPDATE - 3/31/2023
+
+Two new features have been added to AcousticPlotter. 
+- New button on the top left allows users to go back to the home screen and reload a new set up files. 
+- New scaling functionalities have been (top right). These new functionalities allow the user to change the size of the scale bar (scale bar actually stays the same size but the plots increase/decrease in size accordingly), lock the normalization feature on/off (can also be achieved using the hotkey “n”), and the scalebar can be turned on/off.
+
+<p align="center">
+  <img src="Assets/doc3%20-%20update%203.png" alt="hi" class="inline"/>
+</p>
+
 ## DPOAEs
 
 In the main window, the user sees the raw DPOAE spectrums. Like the ABR window, the lists on the left-hand side allows the user to select which mouse and which frequency to view. Details about the selected mouse are displayed on the bottom-left. Two additional plots are also displayed in the DPOAE window. The top-right plot displays a zoomed in image of the spectra, at threshold, centered around the DP. The bottom-right plot displays the amplitudes of F1, F2, DP, and noise floor as a function of stimulus level. 
