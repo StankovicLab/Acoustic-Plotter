@@ -20,8 +20,6 @@ addpath('automaticThreshold')
 app = AcousticPlotterStartGUI;
 % call app
 startfuncmaster(app);
-% wait until app has been closed to continue
-waitfor(app)
 
 
 

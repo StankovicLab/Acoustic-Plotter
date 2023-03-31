@@ -145,6 +145,11 @@ if ~isempty(selected)
         sheet = strrep(sheet, ' ', '');
         sheet(ismember(sheet, specialChar)) = '_';
 
+        % sheet cant be longer than 30 charactors or will through an error
+        if length(sheet)>30
+            sheet = sheet(1:30);
+        end
+
         % write to excel
         writecell(dat, saveName, 'Sheet', sheet)
 
