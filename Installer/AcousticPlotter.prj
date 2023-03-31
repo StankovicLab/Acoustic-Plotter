@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
-  <configuration file="C:\Users\stevemci\Box\Stankovic Lab\Stanford\Ephys Materials\Software\AcousticPlotter\AcousticPlotter_forGithub - Update 2\Installer\AcousticPlotter.prj" location="C:\Users\stevemci\Box\Stankovic Lab\Stanford\Ephys Materials\Software\AcousticPlotter\AcousticPlotter_forGithub - Update 2\Installer" name="AcousticPlotter" target="target.ezdeploy.standalone" target-name="Application Compiler">
+  <configuration build-checksum="647050314" file="C:\Users\stevemci\Box\Stankovic Lab\Stanford\Ephys Materials\Software\AcousticPlotter\AcousticPlotter_forGithub - Update 2-3\Files\AcousticPlotter.prj" location="C:\Users\stevemci\Box\Stankovic Lab\Stanford\Ephys Materials\Software\AcousticPlotter\AcousticPlotter_forGithub - Update 2-3\Files" name="AcousticPlotter" preferred-package-location="C:\Users\stevemci\Box\Stankovic Lab\Stanford\Ephys Materials\Software\AcousticPlotter\AcousticPlotter_forGithub - Update 2-3\Files\AcousticPlotter\for_redistribution" preferred-package-type="package.type.exe" target="target.ezdeploy.standalone" target-name="Application Compiler">
     <param.appname>AcousticPlotter</param.appname>
     <param.icon>${PROJECT_ROOT}\AcousticPlotter_resources\icon.ico</param.icon>
     <param.icons>
@@ -8,7 +8,7 @@
       <file>${PROJECT_ROOT}\AcousticPlotter_resources\icon_24.png</file>
       <file>${PROJECT_ROOT}\AcousticPlotter_resources\icon_16.png</file>
     </param.icons>
-    <param.version>2.1</param.version>
+    <param.version>2.2</param.version>
     <param.authnamewatermark>Stephen McInturff</param.authnamewatermark>
     <param.email>stephen_mcinturff@stanford.edu</param.email>
     <param.company>StanfordOto</param.company>
@@ -22,8 +22,12 @@ ABR thresholds are determined using a method of cross correlation described by S
 update 1/12/2023 - added ABR peakfinder
 
 update 2/28/2023 - fixed a number of bugs
-                 - got rid of opening dialog box "What file type would you like to open? ARF MAT". Now takes care of determining file type automatically</param.description>
-    <param.screenshot>C:\Users\stevemci\Box\Stankovic Lab\Stanford\Ephys Materials\Software\AcousticPlotter\AcousticPlotter_forGithub - Update 2\Assets\MouseICON.jpg</param.screenshot>
+	- got rid of opening dialog box "What file type would you like to open? ARF MAT". Now takes care of determining file type automatically
+
+update 3/31/2023 - fixed a number of bugs
+	- added scaling functionality
+	- added ability to return to starting page</param.description>
+    <param.screenshot>C:\Users\stevemci\Box\Stankovic Lab\Stanford\Ephys Materials\Software\AcousticPlotter\AcousticPlotter_forGithub - Update 2-3\Assets\MouseICON.jpg</param.screenshot>
     <param.guid />
     <param.installpath.string>\StanfordOto\AcousticPlotter\</param.installpath.string>
     <param.installpath.combo>option.installpath.programfiles</param.installpath.combo>
@@ -66,7 +70,11 @@ ABR thresholds are determined using a method of cross correlation described by S
 update 1/12/2023 - added ABR peakfinder
 
 update 2/28/2023 - fixed a number of bugs
-                 - got rid of opening dialog box "What file type would you like to open? ARF MAT". Now takes care of determining file type automatically</param.help.text>
+	- got rid of opening dialog box "What file type would you like to open? ARF MAT". Now takes care of determining file type automatically
+
+update 3/31/2023 - fixed a number of bugs
+	- added scaling functionality
+	- added ability to return to starting page</param.help.text>
     <unset>
       <param.guid />
       <param.installpath.string />
@@ -96,36 +104,36 @@ update 2/28/2023 - fixed a number of bugs
       <param.example />
     </unset>
     <fileset.main>
-      <file>C:\Users\stevemci\Box\Stankovic Lab\Stanford\Ephys Materials\Software\AcousticPlotter\AcousticPlotter_forGithub - Update 2\Files\AcousticPlotter.m</file>
+      <file>${PROJECT_ROOT}\AcousticPlotter.m</file>
     </fileset.main>
     <fileset.resources>
-      <file>C:\Users\stevemci\Box\Stankovic Lab\Stanford\Ephys Materials\Software\AcousticPlotter\AcousticPlotter_forGithub - Update 2\readme2.txt</file>
+      <file>C:\Users\stevemci\Box\Stankovic Lab\Stanford\Ephys Materials\Software\AcousticPlotter\AcousticPlotter_forGithub - Update 2-3\readme2.txt</file>
     </fileset.resources>
     <fileset.package />
     <fileset.depfun>
-      <file>C:\Users\stevemci\Box\Stankovic Lab\Stanford\Ephys Materials\Software\AcousticPlotter\AcousticPlotter_forGithub - Update 2\Files\AcousticPlotterStartGUI.mlapp</file>
-      <file>C:\Users\stevemci\Box\Stankovic Lab\Stanford\Ephys Materials\Software\AcousticPlotter\AcousticPlotter_forGithub - Update 2\Files\arfread_SM.m</file>
-      <file>C:\Users\stevemci\Box\Stankovic Lab\Stanford\Ephys Materials\Software\AcousticPlotter\AcousticPlotter_forGithub - Update 2\Files\Butterworthfilter.m</file>
-      <file>C:\Users\stevemci\Box\Stankovic Lab\Stanford\Ephys Materials\Software\AcousticPlotter\AcousticPlotter_forGithub - Update 2\Files\collectdetailsARF.m</file>
-      <file>C:\Users\stevemci\Box\Stankovic Lab\Stanford\Ephys Materials\Software\AcousticPlotter\AcousticPlotter_forGithub - Update 2\Files\CombineFiles.mlapp</file>
-      <file>C:\Users\stevemci\Box\Stankovic Lab\Stanford\Ephys Materials\Software\AcousticPlotter\AcousticPlotter_forGithub - Update 2\Files\estimate_abr_threshold_SM.m</file>
-      <file>C:\Users\stevemci\Box\Stankovic Lab\Stanford\Ephys Materials\Software\AcousticPlotter\AcousticPlotter_forGithub - Update 2\Files\fit_sigmoid_SM.m</file>
-      <file>C:\Users\stevemci\Box\Stankovic Lab\Stanford\Ephys Materials\Software\AcousticPlotter\AcousticPlotter_forGithub - Update 2\Files\MakeGroups.mlapp</file>
-      <file>C:\Users\stevemci\Box\Stankovic Lab\Stanford\Ephys Materials\Software\AcousticPlotter\AcousticPlotter_forGithub - Update 2\Files\normalizeScale.m</file>
-      <file>C:\Users\stevemci\Box\Stankovic Lab\Stanford\Ephys Materials\Software\AcousticPlotter\AcousticPlotter_forGithub - Update 2\Files\plotABRs.mlapp</file>
-      <file>C:\Users\stevemci\Box\Stankovic Lab\Stanford\Ephys Materials\Software\AcousticPlotter\AcousticPlotter_forGithub - Update 2\Files\plotDPOAEs.mlapp</file>
-      <file>C:\Users\stevemci\Box\Stankovic Lab\Stanford\Ephys Materials\Software\AcousticPlotter\AcousticPlotter_forGithub - Update 2\Files\rewriteTxt.m</file>
-      <file>C:\Users\stevemci\Box\Stankovic Lab\Stanford\Ephys Materials\Software\AcousticPlotter\AcousticPlotter_forGithub - Update 2\Files\saveExcel.m</file>
-      <file>C:\Users\stevemci\Box\Stankovic Lab\Stanford\Ephys Materials\Software\AcousticPlotter\AcousticPlotter_forGithub - Update 2\Files\saveExcel_peaks.m</file>
-      <file>C:\Users\stevemci\Box\Stankovic Lab\Stanford\Ephys Materials\Software\AcousticPlotter\AcousticPlotter_forGithub - Update 2\Files\saveExcel_Thresholds.m</file>
-      <file>C:\Users\stevemci\Box\Stankovic Lab\Stanford\Ephys Materials\Software\AcousticPlotter\AcousticPlotter_forGithub - Update 2\Files\saveImage.m</file>
-      <file>C:\Users\stevemci\Box\Stankovic Lab\Stanford\Ephys Materials\Software\AcousticPlotter\AcousticPlotter_forGithub - Update 2\Files\saveSelect.mlapp</file>
-      <file>C:\Users\stevemci\Box\Stankovic Lab\Stanford\Ephys Materials\Software\AcousticPlotter\AcousticPlotter_forGithub - Update 2\Files\ThresholdSummary.mlapp</file>
+      <file>${PROJECT_ROOT}\AcousticPlotterStartGUI.mlapp</file>
+      <file>${PROJECT_ROOT}\arfread_SM.m</file>
+      <file>${PROJECT_ROOT}\Butterworthfilter.m</file>
+      <file>${PROJECT_ROOT}\collectdetailsARF.m</file>
+      <file>${PROJECT_ROOT}\CombineFiles.mlapp</file>
+      <file>${PROJECT_ROOT}\estimate_abr_threshold_SM.m</file>
+      <file>${PROJECT_ROOT}\fit_sigmoid_SM.m</file>
+      <file>${PROJECT_ROOT}\MakeGroups.mlapp</file>
+      <file>${PROJECT_ROOT}\normalizeScale.m</file>
+      <file>${PROJECT_ROOT}\plotABRs.mlapp</file>
+      <file>${PROJECT_ROOT}\plotDPOAEs.mlapp</file>
+      <file>${PROJECT_ROOT}\rewriteTxt.m</file>
+      <file>${PROJECT_ROOT}\saveExcel.m</file>
+      <file>${PROJECT_ROOT}\saveExcel_peaks.m</file>
+      <file>${PROJECT_ROOT}\saveExcel_Thresholds.m</file>
+      <file>${PROJECT_ROOT}\saveImage.m</file>
+      <file>${PROJECT_ROOT}\saveSelect.mlapp</file>
+      <file>${PROJECT_ROOT}\ThresholdSummary.mlapp</file>
     </fileset.depfun>
     <build-deliverables>
-      <file location="${PROJECT_ROOT}\AcousticPlotter\for_testing" name="splash.png" optional="false">C:\Users\stevemci\Box\Stankovic Lab\Stanford\Ephys Materials\Software\AcousticPlotter\AcousticPlotter_forGithub - Update 2\Installer\AcousticPlotter\for_testing\splash.png</file>
-      <file location="${PROJECT_ROOT}\AcousticPlotter\for_testing" name="readme.txt" optional="true">C:\Users\stevemci\Box\Stankovic Lab\Stanford\Ephys Materials\Software\AcousticPlotter\AcousticPlotter_forGithub - Update 2\Installer\AcousticPlotter\for_testing\readme.txt</file>
-      <file location="${PROJECT_ROOT}\AcousticPlotter\for_testing" name="AcousticPlotter.exe" optional="false">C:\Users\stevemci\Box\Stankovic Lab\Stanford\Ephys Materials\Software\AcousticPlotter\AcousticPlotter_forGithub - Update 2\Installer\AcousticPlotter\for_testing\AcousticPlotter.exe</file>
+      <file location="${PROJECT_ROOT}\AcousticPlotter\for_testing" name="splash.png" optional="false">C:\Users\stevemci\Box\Stankovic Lab\Stanford\Ephys Materials\Software\AcousticPlotter\AcousticPlotter_forGithub - Update 2-3\Files\AcousticPlotter\for_testing\splash.png</file>
+      <file location="${PROJECT_ROOT}\AcousticPlotter\for_testing" name="AcousticPlotter.exe" optional="false">C:\Users\stevemci\Box\Stankovic Lab\Stanford\Ephys Materials\Software\AcousticPlotter\AcousticPlotter_forGithub - Update 2-3\Files\AcousticPlotter\for_testing\AcousticPlotter.exe</file>
+      <file location="${PROJECT_ROOT}\AcousticPlotter\for_testing" name="readme.txt" optional="true">C:\Users\stevemci\Box\Stankovic Lab\Stanford\Ephys Materials\Software\AcousticPlotter\AcousticPlotter_forGithub - Update 2-3\Files\AcousticPlotter\for_testing\readme.txt</file>
     </build-deliverables>
     <workflow />
     <matlab>
