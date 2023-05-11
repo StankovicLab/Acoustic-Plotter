@@ -67,12 +67,28 @@ For other hotkeys see [hotkeys.md](https://github.com/StankovicLab/Acoustic-Plot
   <img src="Assets/doc5.png" alt="hi" class="inline"/>
 </p>
 
+### UPDATE - 5/11/2023
+
+Acousticplotter now offers additional settings (top right corner) for converting from dBV to dB SPL. This conversion is uses the equation found in the [TDT DPOAE literature](chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.tdt.com/files/manuals/DPOAEGuide.pdf)  (page 51) and uses requires both the microphone sensitivity (found in the microphone's documentation) and amount of gain added to the microphone (0 if none). 
+
+<p align="center">
+  <img src="Assets/doc5%20-%20update%204.png" alt="hi" class="inline"/>
+</p>
+
 ## Thresholds
 
 To automatically calculate thresholds, click on the “Auto Threshold” button. Depending on how many mice were selected, it may take some time to automatically find thresholds. This is a longer process for ABRs than for DPOAEs. For ABRs, thresholds are determined using a method of cross correlation described by [Suthakar & Liberman 2019](https://doi.org/10.1016/j.heares.2019.107782). For DPOAEs, thresholds are determined when DP's are greater than 3x the standard deviation above the mean, explained by [Bartho et al. 2020](https://github.com/CDTbot/CDTbot). It is highly advised that the user go through all the data to determine if they agree or disagree with the automatically selected threshold. If the user does not agree with the automatically selected threshold, he/she may edit the threshold by using the up and down keys followed by “enter”. <span style="color: red"> IT IS HIGHLY RECOMMENDED THAT THE USER TO CHECK ALL THRESHOLDS </span>
  
 <p align="center">
   <img src="Assets/doc6.png" alt="hi" class="inline"/>
+</p>
+
+### UPDATE - 5/11/2023
+
+Additional functionality has been added to the autothresholding of DPOAEs. In update 4, the user will be able to choice if they wish to use a threshold criterion, a set value (must be in dB SPL), or a user defined number of standard deviations about the mean.
+
+<p align="center">
+  <img src="Assets/doc14%20-%20update%204.png" alt="hi" class="inline"/>
 </p>
 
 ## Threshold Summary
