@@ -58,3 +58,9 @@ V2.2 - 3/31/2023
 - fixed a number of bugs 
 - added scaling functionality
 - added ability to return to starting page
+
+V3 - 5/11/2023 
+- fixed saving MATLAB figure bug
+- corrected DPOAE conversion to dB SPL by adding mic sensitivity and gain settings
+- added ability to find DPOAE threshold using a criterion or based on noise floor
+
