@@ -13,7 +13,7 @@ close all
 warning off
 
 % add folders that may contain functions
-addpath('FunctionsFolder')
+% addpath('FunctionsFolder')
 addpath('automaticThreshold')
 
 % defite what app to use

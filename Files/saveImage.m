@@ -20,7 +20,7 @@ fn = saveName(idx(end)+1:end-4);
 
 % have to do some reformating to save
 scrsiz = get(0,'ScreenSize');
-f = figure('visible','off');
+f = figure;
 copiedAxes = copyobj(fig, f);
 title(strrep(fn, '_', '-'))
 f.Children.Position = [25, 25, f.Children.Position(3), f.Children.Position(4)];
