@@ -53,6 +53,15 @@ Two new features have been added to AcousticPlotter.
   <img src="Assets/doc3%20-%20update%203.png" alt="hi" class="inline"/>
 </p>
 
+### UPDATE - 5/26/2023
+
+-Changed the filter from a Butterworth filter to a FIR filter which has temporal properties. Butterworth filters can effect the phase of frequencies differently, FIR filters effect all frequencies equaly and thus is more easily corrected for.
+-Added a feature to correct for any gain used in the aquisition of ABRs. Depending the gain settings in BioSigRZ, the output voltage may not be correct. 
+
+<p align="center">
+  <img src="Assets/doc3%20-%20update%205.png" alt="hi" class="inline"/>
+</p>
+
 ## DPOAEs
 
 In the main window, the user sees the raw DPOAE spectrums. Like the ABR window, the lists on the left-hand side allows the user to select which mouse and which frequency to view. Details about the selected mouse are displayed on the bottom-left. Two additional plots are also displayed in the DPOAE window. The top-right plot displays a zoomed in image of the spectra, at threshold, centered around the DP. The bottom-right plot displays the amplitudes of F1, F2, DP, and noise floor as a function of stimulus level. 
