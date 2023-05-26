@@ -15,6 +15,7 @@ mx = max(wav(end,:));
 dif = diff([mn, mx]);
 
 norm = (sep*1.2)/dif;
+disp(norm)
 
 return
 
