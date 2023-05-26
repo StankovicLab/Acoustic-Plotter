@@ -64,3 +64,7 @@ V3 - 5/11/2023
 - corrected DPOAE conversion to dB SPL by adding mic sensitivity and gain settings
 - added ability to find DPOAE threshold using a criterion or based on noise floor
 
+V3.1 - 5/26/2023 
+- Changed the filter from a butterworth filter to a FIR filter which has temporal properties
+- added a feature to correct for any gain used in the aquisition of ABRs
+
