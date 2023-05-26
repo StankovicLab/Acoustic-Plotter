@@ -43,6 +43,7 @@ for i = 1:length(data)
     sampPer_us = [data(i).recs.SampPer_us];
     dur_ms = [data(i).recs.dur_ms];
     npts = [data(i).recs.npts];
+    gain = [data(i).recs.gain];
 
     %if DPOAE file, collect cursor info
     if strcmp(type, 'DPOAE')
@@ -75,6 +76,7 @@ for i = 1:length(data)
         details(i).(['Freq', num2str(j)]).levels = levels;
         details(i).(['Freq', num2str(j)]).indexes = idx;
         details(i).(['Freq', num2str(j)]).navgs = navgs(idx);
+        details(i).(['Freq', num2str(j)]).gain = unique(gain(idx));
         details(i).(['Freq', num2str(j)]).samp_dur = unique(sampPer_us(idx));
         details(i).(['Freq', num2str(j)]).dur_ms = unique(dur_ms(idx));
         details(i).(['Freq', num2str(j)]).npts = unique(npts(idx));
