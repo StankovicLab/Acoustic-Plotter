@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
-  <configuration build-checksum="2119196859" file="C:\Users\stevemci\Box\Stephen McInturff's Files\AcousticPlotter_forGithub - Copy\Installer_New\AcousticPlotter.prj" location="C:\Users\stevemci\Box\Stephen McInturff's Files\AcousticPlotter_forGithub - Copy\Installer_New" name="AcousticPlotter" preferred-package-location="C:\Users\stevemci\Box\Stephen McInturff's Files\AcousticPlotter_forGithub - Copy\Installer_New\AcousticPlotter\for_redistribution" preferred-package-type="package.type.exe" target="target.ezdeploy.standalone" target-name="Application Compiler">
+  <configuration file="D:\SM\MATLAB\AcousticPlotter_forGithub - Update 5\Installer New\AcousticPlotter.prj" location="D:\SM\MATLAB\AcousticPlotter_forGithub - Update 5\Installer New" name="AcousticPlotter" target="target.ezdeploy.standalone" target-name="Application Compiler">
     <param.appname>AcousticPlotter</param.appname>
     <param.icon>${PROJECT_ROOT}\AcousticPlotter_resources\icon.ico</param.icon>
     <param.icons>
@@ -8,16 +8,42 @@
       <file>${PROJECT_ROOT}\AcousticPlotter_resources\icon_24.png</file>
       <file>${PROJECT_ROOT}\AcousticPlotter_resources\icon_16.png</file>
     </param.icons>
-    <param.version>2.0</param.version>
+    <param.version>3.1</param.version>
     <param.authnamewatermark>Stephen McInturff</param.authnamewatermark>
     <param.email>stephen_mcinturff@stanford.edu</param.email>
     <param.company>StanfordOto</param.company>
     <param.summary>Application for veiwing and finding thresholds of ABRs and DPOAEs created by the TDT software BioSigRZ</param.summary>
-    <param.description>DPOAE thresholds are determined when DP's are greater than 3x the standard deviation above the mean. (Bartho et al. 2020)
+    <param.description>Use this application to open .arf files created by TDT BioSigRZ software. Can view ABRs and DPOAEs and export data as an excel or as Matlab data.
+
+Thresholds are semiautomatically determined
+DPOAE thresholds are determined when DP's are greater than 3x the standard deviation above the mean. (Bartho et al. 2020)
 ABR thresholds are determined using a method of cross correlation described by Suthakar &amp; Liberman 2019
 
-update 1/12/2023 - added ABR peakfinder</param.description>
-    <param.screenshot>C:\Users\stevemci\Box\Stephen McInturff's Files\AcousticPlotter_forGithub - Copy\MouseICON.jpg</param.screenshot>
+update 1/12/2023 - added ABR peakfinder
+
+update 2/28/2023 - fixed a number of bugs
+                 - got rid of opening dialog box "What file type would you like to open? ARF MAT". Now takes care of determining file type automatically
+
+update 3/31/2023 - fixed a number of bugs
+                 - added scaling functionality
+		     - added ability to return to starting page
+
+update 5/11/2023 - fixed saving MATLAB figure bug
+                 - corrected DPOAE conversion to dB SPL by adding mic sensitivity and gain settings added ability to find DPOAE threshold using a criterion or based on noise floor
+
+update 5/26/2023 - Changed the filter from a Butterworth filter to a FIR filter which has temporal properties.
+                 - Added a feature to correct for any gain used in the aquisition of ABRs.
+
+HOTKEYS:
+when plot is selected
+up/down arrows -&gt; scroll through levels
+'enter' -&gt; make selected level new threshold
+'+'/'-' -&gt; increase/decrease the amplitude of waveforms
+'n' -&gt; normalize amplitudes to best fit window
+while holding down ctlr
+	up/down arrows -&gt; scoll through mice
+	right/left arrows -&gt; scoll through frequencies within a single mouse</param.description>
+    <param.screenshot>D:\SM\MATLAB\AcousticPlotter_forGithub - Update 5\MouseICON.jpg</param.screenshot>
     <param.guid />
     <param.installpath.string>\StanfordOto\AcousticPlotter\</param.installpath.string>
     <param.installpath.combo>option.installpath.programfiles</param.installpath.combo>
@@ -49,7 +75,38 @@ update 1/12/2023 - added ABR peakfinder</param.description>
 	 
  Input Arguments 
 	 -?  print help on how to use the application 
-	 input arguments</param.help.text>
+	 input arguments 
+ Description 
+ 	 Use this application to open .arf files created by TDT BioSigRZ software. Can view ABRs and DPOAEs and export data as an excel or as Matlab data.
+
+Thresholds are semiautomatically determined
+DPOAE thresholds are determined when DP's are greater than 3x the standard deviation above the mean. (Bartho et al. 2020)
+ABR thresholds are determined using a method of cross correlation described by Suthakar &amp; Liberman 2019
+
+update 1/12/2023 - added ABR peakfinder
+
+update 2/28/2023 - fixed a number of bugs
+                 - got rid of opening dialog box "What file type would you like to open? ARF MAT". Now takes care of determining file type automatically
+
+update 3/31/2023 - fixed a number of bugs
+                 - added scaling functionality
+		     - added ability to return to starting page
+
+update 5/11/2023 - fixed saving MATLAB figure bug
+                 - corrected DPOAE conversion to dB SPL by adding mic sensitivity and gain settings added ability to find DPOAE threshold using a criterion or based on noise floor
+
+update 5/26/2023 - Changed the filter from a Butterworth filter to a FIR filter which has temporal properties.
+                 - Added a feature to correct for any gain used in the aquisition of ABRs.
+
+HOTKEYS:
+when plot is selected
+up/down arrows -&gt; scroll through levels
+'enter' -&gt; make selected level new threshold
+'+'/'-' -&gt; increase/decrease the amplitude of waveforms
+'n' -&gt; normalize amplitudes to best fit window
+while holding down ctlr
+	up/down arrows -&gt; scoll through mice
+	right/left arrows -&gt; scoll through frequencies within a single mouse</param.help.text>
     <unset>
       <param.guid />
       <param.installpath.string />
@@ -79,36 +136,37 @@ update 1/12/2023 - added ABR peakfinder</param.description>
       <param.example />
     </unset>
     <fileset.main>
-      <file>C:\Users\stevemci\Box\Stephen McInturff's Files\AcousticPlotter_forGithub - Copy\Files\AcousticPlotter.m</file>
+      <file>D:\SM\MATLAB\AcousticPlotter_forGithub - Update 5\Files\AcousticPlotter.m</file>
     </fileset.main>
     <fileset.resources>
-      <file>C:\Users\stevemci\Box\Stephen McInturff's Files\AcousticPlotter_forGithub - Copy\readme2.txt</file>
+      <file>D:\SM\MATLAB\AcousticPlotter_forGithub - Update 5\readme2.txt</file>
     </fileset.resources>
     <fileset.package />
     <fileset.depfun>
-      <file>C:\Users\stevemci\Box\Stephen McInturff's Files\AcousticPlotter_forGithub - Copy\Files\AcousticPlotterStartGUI.mlapp</file>
-      <file>C:\Users\stevemci\Box\Stephen McInturff's Files\AcousticPlotter_forGithub - Copy\Files\arfread_SM.m</file>
-      <file>C:\Users\stevemci\Box\Stephen McInturff's Files\AcousticPlotter_forGithub - Copy\Files\Butterworthfilter.m</file>
-      <file>C:\Users\stevemci\Box\Stephen McInturff's Files\AcousticPlotter_forGithub - Copy\Files\collectdetailsARF.m</file>
-      <file>C:\Users\stevemci\Box\Stephen McInturff's Files\AcousticPlotter_forGithub - Copy\Files\CombineFiles.mlapp</file>
-      <file>C:\Users\stevemci\Box\Stephen McInturff's Files\AcousticPlotter_forGithub - Copy\Files\estimate_abr_threshold_SM.m</file>
-      <file>C:\Users\stevemci\Box\Stephen McInturff's Files\AcousticPlotter_forGithub - Copy\Files\fit_sigmoid_SM.m</file>
-      <file>C:\Users\stevemci\Box\Stephen McInturff's Files\AcousticPlotter_forGithub - Copy\Files\MakeGroups.mlapp</file>
-      <file>C:\Users\stevemci\Box\Stephen McInturff's Files\AcousticPlotter_forGithub - Copy\Files\normalizeScale.m</file>
-      <file>C:\Users\stevemci\Box\Stephen McInturff's Files\AcousticPlotter_forGithub - Copy\Files\plotABRs.mlapp</file>
-      <file>C:\Users\stevemci\Box\Stephen McInturff's Files\AcousticPlotter_forGithub - Copy\Files\plotDPOAEs.mlapp</file>
-      <file>C:\Users\stevemci\Box\Stephen McInturff's Files\AcousticPlotter_forGithub - Copy\Files\rewriteTxt.m</file>
-      <file>C:\Users\stevemci\Box\Stephen McInturff's Files\AcousticPlotter_forGithub - Copy\Files\saveExcel.m</file>
-      <file>C:\Users\stevemci\Box\Stephen McInturff's Files\AcousticPlotter_forGithub - Copy\Files\saveExcel_peaks.m</file>
-      <file>C:\Users\stevemci\Box\Stephen McInturff's Files\AcousticPlotter_forGithub - Copy\Files\saveExcel_Thresholds.m</file>
-      <file>C:\Users\stevemci\Box\Stephen McInturff's Files\AcousticPlotter_forGithub - Copy\Files\saveImage.m</file>
-      <file>C:\Users\stevemci\Box\Stephen McInturff's Files\AcousticPlotter_forGithub - Copy\Files\saveSelect.mlapp</file>
-      <file>C:\Users\stevemci\Box\Stephen McInturff's Files\AcousticPlotter_forGithub - Copy\Files\ThresholdSummary.mlapp</file>
+      <file>D:\SM\MATLAB\AcousticPlotter_forGithub - Update 5\Files\AcousticPlotterStartGUI.mlapp</file>
+      <file>D:\SM\MATLAB\AcousticPlotter_forGithub - Update 5\Files\arfread_SM.m</file>
+      <file>D:\SM\MATLAB\AcousticPlotter_forGithub - Update 5\Files\collectdetailsARF.m</file>
+      <file>D:\SM\MATLAB\AcousticPlotter_forGithub - Update 5\Files\CombineFiles.mlapp</file>
+      <file>D:\SM\MATLAB\AcousticPlotter_forGithub - Update 5\Files\estimate_abr_threshold_SM.m</file>
+      <file>D:\SM\MATLAB\AcousticPlotter_forGithub - Update 5\Files\FIRfilter.m</file>
+      <file>D:\SM\MATLAB\AcousticPlotter_forGithub - Update 5\Files\fit_sigmoid_SM.m</file>
+      <file>D:\SM\MATLAB\AcousticPlotter_forGithub - Update 5\Files\MakeGroups.mlapp</file>
+      <file>D:\SM\MATLAB\AcousticPlotter_forGithub - Update 5\Files\normalizeScale.m</file>
+      <file>D:\SM\MATLAB\AcousticPlotter_forGithub - Update 5\Files\plotABRs.mlapp</file>
+      <file>D:\SM\MATLAB\AcousticPlotter_forGithub - Update 5\Files\plotDPOAEs.mlapp</file>
+      <file>D:\SM\MATLAB\AcousticPlotter_forGithub - Update 5\Files\rewriteTxt.m</file>
+      <file>D:\SM\MATLAB\AcousticPlotter_forGithub - Update 5\Files\saveExcel.m</file>
+      <file>D:\SM\MATLAB\AcousticPlotter_forGithub - Update 5\Files\saveExcel_peaks.m</file>
+      <file>D:\SM\MATLAB\AcousticPlotter_forGithub - Update 5\Files\saveExcel_Thresholds.m</file>
+      <file>D:\SM\MATLAB\AcousticPlotter_forGithub - Update 5\Files\saveImage.m</file>
+      <file>D:\SM\MATLAB\AcousticPlotter_forGithub - Update 5\Files\saveSelect.mlapp</file>
+      <file>D:\SM\MATLAB\AcousticPlotter_forGithub - Update 5\Files\ThresholdSummary.mlapp</file>
+      <file>D:\SM\MATLAB\AcousticPlotter_forGithub - Update 5\Files\ThreshTypeDP.mlapp</file>
     </fileset.depfun>
     <build-deliverables>
-      <file location="${PROJECT_ROOT}\AcousticPlotter\for_testing" name="AcousticPlotter.exe" optional="false">C:\Users\stevemci\Box\Stephen McInturff's Files\AcousticPlotter_forGithub - Copy\Installer_New\AcousticPlotter\for_testing\AcousticPlotter.exe</file>
-      <file location="${PROJECT_ROOT}\AcousticPlotter\for_testing" name="splash.png" optional="false">C:\Users\stevemci\Box\Stephen McInturff's Files\AcousticPlotter_forGithub - Copy\Installer_New\AcousticPlotter\for_testing\splash.png</file>
-      <file location="${PROJECT_ROOT}\AcousticPlotter\for_testing" name="readme.txt" optional="true">C:\Users\stevemci\Box\Stephen McInturff's Files\AcousticPlotter_forGithub - Copy\Installer_New\AcousticPlotter\for_testing\readme.txt</file>
+      <file location="${PROJECT_ROOT}\AcousticPlotter\for_testing" name="AcousticPlotter.exe" optional="false">D:\SM\MATLAB\AcousticPlotter_forGithub - Update 5\Installer New\AcousticPlotter\for_testing\AcousticPlotter.exe</file>
+      <file location="${PROJECT_ROOT}\AcousticPlotter\for_testing" name="splash.png" optional="false">D:\SM\MATLAB\AcousticPlotter_forGithub - Update 5\Installer New\AcousticPlotter\for_testing\splash.png</file>
+      <file location="${PROJECT_ROOT}\AcousticPlotter\for_testing" name="readme.txt" optional="true">D:\SM\MATLAB\AcousticPlotter_forGithub - Update 5\Installer New\AcousticPlotter\for_testing\readme.txt</file>
     </build-deliverables>
     <workflow />
     <matlab>
