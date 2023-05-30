@@ -66,5 +66,5 @@ V3 - 5/11/2023
 
 V3.1 - 5/26/2023 
 - Changed the filter from a Butterworth filter to a FIR filter which has temporal properties.
-- Added a feature to correct for any gain used in the aquisition of ABRs.
+- Added a feature to correct for any gain used in the acquisition  of ABRs.
 
