@@ -65,6 +65,6 @@ V3 - 5/11/2023
 - added ability to find DPOAE threshold using a criterion or based on noise floor
 
 V3.1 - 5/26/2023 
-- Changed the filter from a Butterworth filter to a FIR filter which has temporal properties.
+- Changed the filter from a Butterworth filter to a FIR filter which has superior temporal properties.
 - Added a feature to correct for any gain used in the acquisition  of ABRs.
 
