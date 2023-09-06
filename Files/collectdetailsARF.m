@@ -68,6 +68,20 @@ for i = 1:length(data)
             levels = [data(i).recs.Var1]; levels = levels(idx);
         end
 
+        % find if any levels are double, take second or one with most averages
+        if length(unique(levels)) ~= length(levels)
+            levOld = levels; idxOld = idx;
+            [levels,ix] = unique(levOld);
+            duplicate_idx = setdiff(1:numel(levOld), ix);
+            duplicate_idx = sort(find(levOld == levOld(duplicate_idx)));
+            idx = [];
+            for h = 1:length(idxOld)
+                if ~ismember(h, duplicate_idx(1:end-1))
+                    idx = [idx, h];
+                end
+            end
+        end
+
         % sort levels from high to low and reorganize idx and levels arrays
         [~,or] = sort(levels);
         levels = levels(or); idx = idx(or);
