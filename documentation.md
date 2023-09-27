@@ -62,6 +62,15 @@ Two new features have been added to AcousticPlotter.
   <img src="Assets/doc3%20-%20update%205.png" alt="hi" class="inline"/>
 </p>
 
+### UPDATE - 9/27/2023
+
+-An error occured if a specific SGI (specific frequency and level) was redone or a duplicate of the same level was present in the file. The new code will ignore the first attempt of a SGI and only use the last taken SGI (newest).
+-If the electrodes are mixed up and placed backwards, then the resulting ABR waveforms will be inverted. A button has been added that will correct this. Any inversion will be saved. Inverting waveform also resets peaks and nodes.
+
+<p align="center">
+  <img src="Assets/doc5%20-%20update%206.png" alt="hi" class="inline"/>
+</p>
+
 ## DPOAEs
 
 In the main window, the user sees the raw DPOAE spectrums. Like the ABR window, the lists on the left-hand side allows the user to select which mouse and which frequency to view. Details about the selected mouse are displayed on the bottom-left. Two additional plots are also displayed in the DPOAE window. The top-right plot displays a zoomed in image of the spectra, at threshold, centered around the DP. The bottom-right plot displays the amplitudes of F1, F2, DP, and noise floor as a function of stimulus level. 
