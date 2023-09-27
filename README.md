@@ -68,3 +68,7 @@ V3.1 - 5/26/2023
 - Changed the filter from a Butterworth filter to a FIR filter which has superior temporal properties.
 - Added a feature to correct for any gain used in the acquisition  of ABRs.
 
+V3.2 - 9/27/2023 
+- Fixed error that occured when a level was 'redone' and there are two of the same frequency and level in a file. The program will ignore all but the newest recording.
+- When electrodes are placed incorrectly (pinna on vertex and vertex on pinna), the waveform is inverted. Added functionality to reinvert waveform.
+
