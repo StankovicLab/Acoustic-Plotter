@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
-  <configuration file="D:\SM\MATLAB\AcousticPlotter_forGithub - Update 5\Installer New\AcousticPlotter.prj" location="D:\SM\MATLAB\AcousticPlotter_forGithub - Update 5\Installer New" name="AcousticPlotter" target="target.ezdeploy.standalone" target-name="Application Compiler">
+  <configuration file="D:\SM\MATLAB\AcousticPlotter_forGithub - Update 6\Installer New\AcousticPlotter.prj" location="D:\SM\MATLAB\AcousticPlotter_forGithub - Update 6\Installer New" name="AcousticPlotter" target="target.ezdeploy.standalone" target-name="Application Compiler">
     <param.appname>AcousticPlotter</param.appname>
     <param.icon>${PROJECT_ROOT}\AcousticPlotter_resources\icon.ico</param.icon>
     <param.icons>
@@ -8,7 +8,7 @@
       <file>${PROJECT_ROOT}\AcousticPlotter_resources\icon_24.png</file>
       <file>${PROJECT_ROOT}\AcousticPlotter_resources\icon_16.png</file>
     </param.icons>
-    <param.version>3.1</param.version>
+    <param.version>1.0</param.version>
     <param.authnamewatermark>Stephen McInturff</param.authnamewatermark>
     <param.email>stephen_mcinturff@stanford.edu</param.email>
     <param.company>StanfordOto</param.company>
@@ -34,6 +34,9 @@ update 5/11/2023 - fixed saving MATLAB figure bug
 update 5/26/2023 - Changed the filter from a Butterworth filter to a FIR filter which has temporal properties.
                  - Added a feature to correct for any gain used in the aquisition of ABRs.
 
+update 9/27/2023 - Fixed error that occured when a level was 'redone' and there are two of the same frequency and level in a file. The program will ignore all but the newest recording.
+                 - When electrodes are placed incorrectly (pinna on vertex and vertex on pinna), the waveform is inverted. Added functionality to reinvert waveform.
+
 HOTKEYS:
 when plot is selected
 up/down arrows -&gt; scroll through levels
@@ -43,7 +46,7 @@ up/down arrows -&gt; scroll through levels
 while holding down ctlr
 	up/down arrows -&gt; scoll through mice
 	right/left arrows -&gt; scoll through frequencies within a single mouse</param.description>
-    <param.screenshot>D:\SM\MATLAB\AcousticPlotter_forGithub - Update 5\MouseICON.jpg</param.screenshot>
+    <param.screenshot>D:\SM\MATLAB\AcousticPlotter_forGithub - Update 6\MouseICON.jpg</param.screenshot>
     <param.guid />
     <param.installpath.string>\StanfordOto\AcousticPlotter\</param.installpath.string>
     <param.installpath.combo>option.installpath.programfiles</param.installpath.combo>
@@ -98,6 +101,9 @@ update 5/11/2023 - fixed saving MATLAB figure bug
 update 5/26/2023 - Changed the filter from a Butterworth filter to a FIR filter which has temporal properties.
                  - Added a feature to correct for any gain used in the aquisition of ABRs.
 
+update 9/27/2023 - Fixed error that occured when a level was 'redone' and there are two of the same frequency and level in a file. The program will ignore all but the newest recording.
+                 - When electrodes are placed incorrectly (pinna on vertex and vertex on pinna), the waveform is inverted. Added functionality to reinvert waveform.
+
 HOTKEYS:
 when plot is selected
 up/down arrows -&gt; scroll through levels
@@ -108,6 +114,7 @@ while holding down ctlr
 	up/down arrows -&gt; scoll through mice
 	right/left arrows -&gt; scoll through frequencies within a single mouse</param.help.text>
     <unset>
+      <param.version />
       <param.guid />
       <param.installpath.string />
       <param.installpath.combo />
@@ -136,37 +143,37 @@ while holding down ctlr
       <param.example />
     </unset>
     <fileset.main>
-      <file>D:\SM\MATLAB\AcousticPlotter_forGithub - Update 5\Files\AcousticPlotter.m</file>
+      <file>D:\SM\MATLAB\AcousticPlotter_forGithub - Update 6\Files\AcousticPlotter.m</file>
     </fileset.main>
     <fileset.resources>
-      <file>D:\SM\MATLAB\AcousticPlotter_forGithub - Update 5\readme2.txt</file>
+      <file>D:\SM\MATLAB\AcousticPlotter_forGithub - Update 6\readme2.txt</file>
     </fileset.resources>
     <fileset.package />
     <fileset.depfun>
-      <file>D:\SM\MATLAB\AcousticPlotter_forGithub - Update 5\Files\AcousticPlotterStartGUI.mlapp</file>
-      <file>D:\SM\MATLAB\AcousticPlotter_forGithub - Update 5\Files\arfread_SM.m</file>
-      <file>D:\SM\MATLAB\AcousticPlotter_forGithub - Update 5\Files\collectdetailsARF.m</file>
-      <file>D:\SM\MATLAB\AcousticPlotter_forGithub - Update 5\Files\CombineFiles.mlapp</file>
-      <file>D:\SM\MATLAB\AcousticPlotter_forGithub - Update 5\Files\estimate_abr_threshold_SM.m</file>
-      <file>D:\SM\MATLAB\AcousticPlotter_forGithub - Update 5\Files\FIRfilter.m</file>
-      <file>D:\SM\MATLAB\AcousticPlotter_forGithub - Update 5\Files\fit_sigmoid_SM.m</file>
-      <file>D:\SM\MATLAB\AcousticPlotter_forGithub - Update 5\Files\MakeGroups.mlapp</file>
-      <file>D:\SM\MATLAB\AcousticPlotter_forGithub - Update 5\Files\normalizeScale.m</file>
-      <file>D:\SM\MATLAB\AcousticPlotter_forGithub - Update 5\Files\plotABRs.mlapp</file>
-      <file>D:\SM\MATLAB\AcousticPlotter_forGithub - Update 5\Files\plotDPOAEs.mlapp</file>
-      <file>D:\SM\MATLAB\AcousticPlotter_forGithub - Update 5\Files\rewriteTxt.m</file>
-      <file>D:\SM\MATLAB\AcousticPlotter_forGithub - Update 5\Files\saveExcel.m</file>
-      <file>D:\SM\MATLAB\AcousticPlotter_forGithub - Update 5\Files\saveExcel_peaks.m</file>
-      <file>D:\SM\MATLAB\AcousticPlotter_forGithub - Update 5\Files\saveExcel_Thresholds.m</file>
-      <file>D:\SM\MATLAB\AcousticPlotter_forGithub - Update 5\Files\saveImage.m</file>
-      <file>D:\SM\MATLAB\AcousticPlotter_forGithub - Update 5\Files\saveSelect.mlapp</file>
-      <file>D:\SM\MATLAB\AcousticPlotter_forGithub - Update 5\Files\ThresholdSummary.mlapp</file>
-      <file>D:\SM\MATLAB\AcousticPlotter_forGithub - Update 5\Files\ThreshTypeDP.mlapp</file>
+      <file>D:\SM\MATLAB\AcousticPlotter_forGithub - Update 6\Files\AcousticPlotterStartGUI.mlapp</file>
+      <file>D:\SM\MATLAB\AcousticPlotter_forGithub - Update 6\Files\arfread_SM.m</file>
+      <file>D:\SM\MATLAB\AcousticPlotter_forGithub - Update 6\Files\collectdetailsARF.m</file>
+      <file>D:\SM\MATLAB\AcousticPlotter_forGithub - Update 6\Files\CombineFiles.mlapp</file>
+      <file>D:\SM\MATLAB\AcousticPlotter_forGithub - Update 6\Files\estimate_abr_threshold_SM.m</file>
+      <file>D:\SM\MATLAB\AcousticPlotter_forGithub - Update 6\Files\FIRfilter.m</file>
+      <file>D:\SM\MATLAB\AcousticPlotter_forGithub - Update 6\Files\fit_sigmoid_SM.m</file>
+      <file>D:\SM\MATLAB\AcousticPlotter_forGithub - Update 6\Files\MakeGroups.mlapp</file>
+      <file>D:\SM\MATLAB\AcousticPlotter_forGithub - Update 6\Files\normalizeScale.m</file>
+      <file>D:\SM\MATLAB\AcousticPlotter_forGithub - Update 6\Files\plotABRs.mlapp</file>
+      <file>D:\SM\MATLAB\AcousticPlotter_forGithub - Update 6\Files\plotDPOAEs.mlapp</file>
+      <file>D:\SM\MATLAB\AcousticPlotter_forGithub - Update 6\Files\rewriteTxt.m</file>
+      <file>D:\SM\MATLAB\AcousticPlotter_forGithub - Update 6\Files\saveExcel.m</file>
+      <file>D:\SM\MATLAB\AcousticPlotter_forGithub - Update 6\Files\saveExcel_peaks.m</file>
+      <file>D:\SM\MATLAB\AcousticPlotter_forGithub - Update 6\Files\saveExcel_Thresholds.m</file>
+      <file>D:\SM\MATLAB\AcousticPlotter_forGithub - Update 6\Files\saveImage.m</file>
+      <file>D:\SM\MATLAB\AcousticPlotter_forGithub - Update 6\Files\saveSelect.mlapp</file>
+      <file>D:\SM\MATLAB\AcousticPlotter_forGithub - Update 6\Files\ThresholdSummary.mlapp</file>
+      <file>D:\SM\MATLAB\AcousticPlotter_forGithub - Update 6\Files\ThreshTypeDP.mlapp</file>
     </fileset.depfun>
     <build-deliverables>
-      <file location="${PROJECT_ROOT}\AcousticPlotter\for_testing" name="AcousticPlotter.exe" optional="false">D:\SM\MATLAB\AcousticPlotter_forGithub - Update 5\Installer New\AcousticPlotter\for_testing\AcousticPlotter.exe</file>
-      <file location="${PROJECT_ROOT}\AcousticPlotter\for_testing" name="splash.png" optional="false">D:\SM\MATLAB\AcousticPlotter_forGithub - Update 5\Installer New\AcousticPlotter\for_testing\splash.png</file>
-      <file location="${PROJECT_ROOT}\AcousticPlotter\for_testing" name="readme.txt" optional="true">D:\SM\MATLAB\AcousticPlotter_forGithub - Update 5\Installer New\AcousticPlotter\for_testing\readme.txt</file>
+      <file location="${PROJECT_ROOT}\AcousticPlotter\for_testing" name="AcousticPlotter.exe" optional="false">D:\SM\MATLAB\AcousticPlotter_forGithub - Update 6\Installer New\AcousticPlotter\for_testing\AcousticPlotter.exe</file>
+      <file location="${PROJECT_ROOT}\AcousticPlotter\for_testing" name="readme.txt" optional="true">D:\SM\MATLAB\AcousticPlotter_forGithub - Update 6\Installer New\AcousticPlotter\for_testing\readme.txt</file>
+      <file location="${PROJECT_ROOT}\AcousticPlotter\for_testing" name="splash.png" optional="false">D:\SM\MATLAB\AcousticPlotter_forGithub - Update 6\Installer New\AcousticPlotter\for_testing\splash.png</file>
     </build-deliverables>
     <workflow />
     <matlab>
